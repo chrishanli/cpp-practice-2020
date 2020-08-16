@@ -1,0 +1,11 @@
+E:\2020Summer\Projects\gobang\src\gobang_gui\bin\Release\gobang_gui.exe.config
+E:\2020Summer\Projects\gobang\src\gobang_gui\obj\Release\gobang_gui.csprojResolveAssemblyReference.cache
+E:\2020Summer\Projects\gobang\src\gobang_gui\obj\Release\gobang_gui.Properties.Resources.resources
+E:\2020Summer\Projects\gobang\src\gobang_gui\obj\Release\gobang_gui.csproj.GenerateResource.Cache
+E:\2020Summer\Projects\gobang\src\gobang_gui\bin\Release\gobang_gui.exe
+E:\2020Summer\Projects\gobang\src\gobang_gui\bin\Release\gobang_gui.pdb
+E:\2020Summer\Projects\gobang\src\gobang_gui\bin\Release\DarkUI.dll
+E:\2020Summer\Projects\gobang\src\gobang_gui\bin\Release\DarkUI.pdb
+E:\2020Summer\Projects\gobang\src\gobang_gui\obj\Release\gobang_gui.exe
+E:\2020Summer\Projects\gobang\src\gobang_gui\obj\Release\gobang_gui.pdb
+E:\2020Summer\Projects\gobang\src\gobang_gui\obj\Release\gobang_gui.MoveHandler.resources

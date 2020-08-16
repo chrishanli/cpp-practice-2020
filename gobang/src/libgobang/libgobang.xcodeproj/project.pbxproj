@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1160576B24C997C600954052 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160576A24C997C600954052 /* game.cpp */; };
+		1160578024C9A3DB00954052 /* ai_controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1160577824C9A3DA00954052 /* ai_controller.h */; };
+		1160578124C9A3DB00954052 /* ai_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160577924C9A3DA00954052 /* ai_controller.cpp */; };
+		1160578224C9A3DB00954052 /* negamax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160577A24C9A3DA00954052 /* negamax.cpp */; };
+		1160578524C9A3DB00954052 /* eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160577D24C9A3DB00954052 /* eval.cpp */; };
+		1160578624C9A3DB00954052 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = 1160577E24C9A3DB00954052 /* eval.h */; };
+		1160578724C9A3DB00954052 /* negamax.h in Headers */ = {isa = PBXBuildFile; fileRef = 1160577F24C9A3DB00954052 /* negamax.h */; };
+		1160579124C9A44A00954052 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160578F24C9A44A00954052 /* globals.cpp */; };
+		1160579224C9A44A00954052 /* globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 1160579024C9A44A00954052 /* globals.h */; };
+		1160579724C9A9EE00954052 /* judge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160579624C9A9EE00954052 /* judge.cpp */; };
+		1160579C24C9D18900954052 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160579B24C9D18900954052 /* main.cpp */; };
+		1160579E24C9D22500954052 /* libgobang.h in Headers */ = {isa = PBXBuildFile; fileRef = 1160579D24C9D22500954052 /* libgobang.h */; };
+		116057B924CA6C8E00954052 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 116057B824CA6C8E00954052 /* utils.cpp */; };
+		116057BB24CC1E5000954052 /* game_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 116057BA24CC1E5000954052 /* game_c.cpp */; };
+		116057BD24CC1E7500954052 /* libgobang_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 116057BC24CC1E7500954052 /* libgobang_c.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1160576324C997AD00954052 /* liblibgobang.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibgobang.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1160576A24C997C600954052 /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		1160577824C9A3DA00954052 /* ai_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai_controller.h; sourceTree = "<group>"; };
+		1160577924C9A3DA00954052 /* ai_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ai_controller.cpp; sourceTree = "<group>"; };
+		1160577A24C9A3DA00954052 /* negamax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = negamax.cpp; sourceTree = "<group>"; };
+		1160577D24C9A3DB00954052 /* eval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eval.cpp; sourceTree = "<group>"; };
+		1160577E24C9A3DB00954052 /* eval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eval.h; sourceTree = "<group>"; };
+		1160577F24C9A3DB00954052 /* negamax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = negamax.h; sourceTree = "<group>"; };
+		1160578F24C9A44A00954052 /* globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globals.cpp; sourceTree = "<group>"; };
+		1160579024C9A44A00954052 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		1160579524C9A9E100954052 /* judge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = judge.h; sourceTree = "<group>"; };
+		1160579624C9A9EE00954052 /* judge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = judge.cpp; sourceTree = "<group>"; };
+		1160579B24C9D18900954052 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1160579D24C9D22500954052 /* libgobang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libgobang.h; path = ../include/libgobang.h; sourceTree = "<group>"; };
+		116057B724CA6C7900954052 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		116057B824CA6C8E00954052 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		116057BA24CC1E5000954052 /* game_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_c.cpp; sourceTree = "<group>"; };
+		116057BC24CC1E7500954052 /* libgobang_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libgobang_c.h; path = ../include/libgobang_c.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1160576124C997AD00954052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1160575A24C997AD00954052 = {
+			isa = PBXGroup;
+			children = (
+				1160579D24C9D22500954052 /* libgobang.h */,
+				116057BC24CC1E7500954052 /* libgobang_c.h */,
+				1160576F24C9A35300954052 /* ai */,
+				1160579324C9A97800954052 /* judge */,
+				1160578E24C9A42A00954052 /* utils */,
+				1160576A24C997C600954052 /* game.cpp */,
+				116057BA24CC1E5000954052 /* game_c.cpp */,
+				1160579B24C9D18900954052 /* main.cpp */,
+				1160576424C997AD00954052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1160576424C997AD00954052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1160576324C997AD00954052 /* liblibgobang.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1160576F24C9A35300954052 /* ai */ = {
+			isa = PBXGroup;
+			children = (
+				1160578824C9A3DD00954052 /* headers */,
+				1160577924C9A3DA00954052 /* ai_controller.cpp */,
+				1160577D24C9A3DB00954052 /* eval.cpp */,
+				1160577A24C9A3DA00954052 /* negamax.cpp */,
+			);
+			path = ai;
+			sourceTree = "<group>";
+		};
+		1160578824C9A3DD00954052 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				1160577824C9A3DA00954052 /* ai_controller.h */,
+				1160577E24C9A3DB00954052 /* eval.h */,
+				1160577F24C9A3DB00954052 /* negamax.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		1160578E24C9A42A00954052 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1160579424C9A99900954052 /* headers */,
+				1160578F24C9A44A00954052 /* globals.cpp */,
+				116057B824CA6C8E00954052 /* utils.cpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1160579324C9A97800954052 /* judge */ = {
+			isa = PBXGroup;
+			children = (
+				1160579924C9C02A00954052 /* headers */,
+				1160579624C9A9EE00954052 /* judge.cpp */,
+			);
+			path = judge;
+			sourceTree = "<group>";
+		};
+		1160579424C9A99900954052 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				116057B724CA6C7900954052 /* utils.h */,
+				1160579024C9A44A00954052 /* globals.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		1160579924C9C02A00954052 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				1160579524C9A9E100954052 /* judge.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1160575F24C997AD00954052 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1160578724C9A3DB00954052 /* negamax.h in Headers */,
+				1160579E24C9D22500954052 /* libgobang.h in Headers */,
+				116057BD24CC1E7500954052 /* libgobang_c.h in Headers */,
+				1160578624C9A3DB00954052 /* eval.h in Headers */,
+				1160579224C9A44A00954052 /* globals.h in Headers */,
+				1160578024C9A3DB00954052 /* ai_controller.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1160576224C997AD00954052 /* libgobang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1160576724C997AD00954052 /* Build configuration list for PBXNativeTarget "libgobang" */;
+			buildPhases = (
+				1160575F24C997AD00954052 /* Headers */,
+				1160576024C997AD00954052 /* Sources */,
+				1160576124C997AD00954052 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libgobang;
+			productName = libgobang;
+			productReference = 1160576324C997AD00954052 /* liblibgobang.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1160575B24C997AD00954052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Han Li";
+				TargetAttributes = {
+					1160576224C997AD00954052 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 1160575E24C997AD00954052 /* Build configuration list for PBXProject "libgobang" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1160575A24C997AD00954052;
+			productRefGroup = 1160576424C997AD00954052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1160576224C997AD00954052 /* libgobang */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1160576024C997AD00954052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1160579124C9A44A00954052 /* globals.cpp in Sources */,
+				116057B924CA6C8E00954052 /* utils.cpp in Sources */,
+				1160579724C9A9EE00954052 /* judge.cpp in Sources */,
+				1160579C24C9D18900954052 /* main.cpp in Sources */,
+				116057BB24CC1E5000954052 /* game_c.cpp in Sources */,
+				1160576B24C997C600954052 /* game.cpp in Sources */,
+				1160578224C9A3DB00954052 /* negamax.cpp in Sources */,
+				1160578124C9A3DB00954052 /* ai_controller.cpp in Sources */,
+				1160578524C9A3DB00954052 /* eval.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1160576524C997AD00954052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1160576624C997AD00954052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1160576824C997AD00954052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5B5SJ9JQJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1160576924C997AD00954052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J5B5SJ9JQJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1160575E24C997AD00954052 /* Build configuration list for PBXProject "libgobang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1160576524C997AD00954052 /* Debug */,
+				1160576624C997AD00954052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1160576724C997AD00954052 /* Build configuration list for PBXNativeTarget "libgobang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1160576824C997AD00954052 /* Debug */,
+				1160576924C997AD00954052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1160575B24C997AD00954052 /* Project object */;
+}

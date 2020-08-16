@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\game">
+      <UniqueIdentifier>{73680400-f76a-4591-8d49-cbed1ee86447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\audio">
+      <UniqueIdentifier>{bd48c11b-7b41-476e-97ff-981b1ac8041e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\audio\sfml">
+      <UniqueIdentifier>{9d89bfc4-6e2e-43e8-9371-60206fd70792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\display">
+      <UniqueIdentifier>{c7f0e2f0-9a48-461f-a534-fb52ba15fa46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\exceptions">
+      <UniqueIdentifier>{65f0db2b-4a06-4d8e-a77a-3542be15bec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\global">
+      <UniqueIdentifier>{54a31ede-e511-4f69-ba5e-4d47cbb41fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\managers">
+      <UniqueIdentifier>{885e5850-39b7-4a63-9310-26faea4e993f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\game\objects">
+      <UniqueIdentifier>{64197258-7dec-4ee7-aeeb-18a6d8fd834f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="game\pang.cpp">
+      <Filter>源文件\game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\audio\sfml\sfml_sound_provider.cpp">
+      <Filter>源文件\game\audio\sfml</Filter>
+    </ClCompile>
+    <ClCompile Include="game\audio\sfml\sound_file_cache.cpp">
+      <Filter>源文件\game\audio\sfml</Filter>
+    </ClCompile>
+    <ClCompile Include="game\display\menu.cpp">
+      <Filter>源文件\game\display</Filter>
+    </ClCompile>
+    <ClCompile Include="game\display\splash_screen.cpp">
+      <Filter>源文件\game\display</Filter>
+    </ClCompile>
+    <ClCompile Include="game\global\game.cpp">
+      <Filter>源文件\game\global</Filter>
+    </ClCompile>
+    <ClCompile Include="game\managers\game_object_manager.cpp">
+      <Filter>源文件\game\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\managers\service_manager.cpp">
+      <Filter>源文件\game\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\ai_paddle.cpp">
+      <Filter>源文件\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\game_ball.cpp">
+      <Filter>源文件\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\player_paddle.cpp">
+      <Filter>源文件\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\visible_game_object.cpp">
+      <Filter>源文件\game\objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\pang.h">
+      <Filter>源文件\game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\audio\audio_provider.h">
+      <Filter>源文件\game\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="game\audio\sfml\sfml_sound_provider.h">
+      <Filter>源文件\game\audio\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="game\audio\sfml\sound_file_cache.h">
+      <Filter>源文件\game\audio\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="game\display\menu.h">
+      <Filter>源文件\game\display</Filter>
+    </ClInclude>
+    <ClInclude Include="game\display\splash_screen.h">
+      <Filter>源文件\game\display</Filter>
+    </ClInclude>
+    <ClInclude Include="game\exceptions\exceptions.h">
+      <Filter>源文件\game\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="game\global\game.h">
+      <Filter>源文件\game\global</Filter>
+    </ClInclude>
+    <ClInclude Include="game\managers\game_object_manager.h">
+      <Filter>源文件\game\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\managers\service_manager.h">
+      <Filter>源文件\game\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\ai_paddle.h">
+      <Filter>源文件\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\game_ball.h">
+      <Filter>源文件\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\player_paddle.h">
+      <Filter>源文件\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\visible_game_object.h">
+      <Filter>源文件\game\objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
