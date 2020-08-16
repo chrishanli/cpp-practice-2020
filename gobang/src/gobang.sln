@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gobang_gui", "gobang_gui\go
 		{6D36D90D-A71A-42B1-8B11-6940F3C93410} = {6D36D90D-A71A-42B1-8B11-6940F3C93410}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgobang_test", "libgobang_test\libgobang_test.vcxproj", "{D1A0F073-E425-4002-95F5-FB0557CCDAF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D36D90D-A71A-42B1-8B11-6940F3C93410} = {6D36D90D-A71A-42B1-8B11-6940F3C93410}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +47,16 @@ Global
 		{FCC65FE2-EE57-4B5A-9434-E7A6883765D1}.Release|x64.Build.0 = Release|Any CPU
 		{FCC65FE2-EE57-4B5A-9434-E7A6883765D1}.Release|x86.ActiveCfg = Release|Any CPU
 		{FCC65FE2-EE57-4B5A-9434-E7A6883765D1}.Release|x86.Build.0 = Release|Any CPU
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Debug|x64.ActiveCfg = Debug|x64
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Debug|x64.Build.0 = Debug|x64
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Debug|x86.Build.0 = Debug|Win32
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Release|x64.ActiveCfg = Release|x64
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Release|x64.Build.0 = Release|x64
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Release|x86.ActiveCfg = Release|Win32
+		{D1A0F073-E425-4002-95F5-FB0557CCDAF8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

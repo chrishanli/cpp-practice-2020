@@ -22,15 +22,22 @@
 #include <judge/judge.h>
 #include <utils/utils.h>
 #include <libgobang_c.h>
+#include <cstring>
 
 GobangGame* NewGame() {
     GobangGame* game = new GobangGame;
-    
+
     game->current_player = 1;
     game->winner = game->last_r = game->last_c = 0;
-    game->game_board = new char [DEFAULT_GAME_BOARD_SIZE * DEFAULT_GAME_BOARD_SIZE + 1];
-    
+    game->game_board = new char[DEFAULT_GAME_BOARD_SIZE * DEFAULT_GAME_BOARD_SIZE + 1];
+    memset(game->game_board, 0, DEFAULT_GAME_BOARD_SIZE * DEFAULT_GAME_BOARD_SIZE + 1);
+
     return game;
+}
+
+void DestroyGame(GobangGame* game) {
+    delete game->game_board;
+    delete game;
 }
 
 Bool AIMove(GobangGame* game) {
@@ -45,31 +52,31 @@ Bool AIMove(GobangGame* game) {
     // Generate the AI move (1 thread)
     int actual_depth, move_r, move_c;
     unsigned int node_count, eval_count, pm_count;
-    
+
     RenjuAIController::generateMove(game->game_board,
-                                    game->current_player,
-                                    DEFAULT_DEEP,
-                                    DEFAULT_TIME_LIM,
-                                    &actual_depth,
-                                    &move_r,
-                                    &move_c,
-                                    &node_count,
-                                    &eval_count,
-                                    &pm_count);
-    
+        game->current_player,
+        DEFAULT_DEEP,
+        DEFAULT_TIME_LIM,
+        &actual_depth,
+        &move_r,
+        &move_c,
+        &node_count,
+        &eval_count,
+        &pm_count);
+
     // Execute the move
     GobangUtils::setCell(game->game_board,
-                         move_r, move_c,
-                         static_cast<char>(game->current_player));
+        move_r, move_c,
+        static_cast<char>(game->current_player));
     game->last_r = move_r;
     game->last_c = move_c;
-    
+
     // Judge if anyone wins at current state
     _winning_player = GobangJudge::winningPlayer(game->game_board);
     if (_winning_player != 0) {
         game->winner = _winning_player;
     }
-    
+
     // Exchange the player
     game->current_player = game->current_player == 1 ? 2 : 1;
     return YES;
@@ -83,23 +90,45 @@ Bool PlayerMove(GobangGame* game, int move_r, int move_c) {
         game->current_player = game->current_player == 1 ? 2 : 1;
         return YES;
     }
-    
+
     // Execute the move
     GobangUtils::setCell(game->game_board,
-                         move_r, move_c,
-                         static_cast<char>(game->current_player));
+        move_r, move_c,
+        static_cast<char>(game->current_player));
     game->last_r = move_r;
     game->last_c = move_c;
-    
+
     // Judge if anyone wins at current state
     _winning_player = GobangJudge::winningPlayer(game->game_board);
     if (_winning_player != 0) {
         game->winner = _winning_player;
     }
-    
+
     // Exchange the player
     game->current_player = game->current_player == 1 ? 2 : 1;
-    
+
     return YES;
 }
 
+void RestartGame(GobangGame* game) {
+    memset(game->game_board, 0, DEFAULT_GAME_BOARD_SIZE * DEFAULT_GAME_BOARD_SIZE + 1);
+    game->last_c = game->last_r = 0;
+    game->winner = 0;
+    game->current_player = 1;
+}
+
+int GetWinner(GobangGame* game) {
+    return game->winner;
+}
+
+int GetLastRow(GobangGame* game) {
+    return game->last_r;
+}
+
+int GetLastCol(GobangGame* game) {
+    return game->last_c;
+}
+
+int GetCurrentPlayer(GobangGame* game) {
+    return game->current_player;
+}

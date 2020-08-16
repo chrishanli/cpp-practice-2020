@@ -67,6 +67,30 @@ DLLPORT Bool AIMove(GobangGame* game);
 /// @param game the game object
 DLLPORT Bool PlayerMove(GobangGame* game, int move_r, int move_c);
 
+/// Destroys a given gobang game object
+/// @param game the game object
+DLLPORT void DestroyGame(GobangGame* game);
+
+/// Restart a given gobang game object
+/// @param game the game object
+DLLPORT void RestartGame(GobangGame* game);
+
+/// Extracts the winner (if any) from a given game
+/// @param game the game object
+DLLPORT int GetWinner(GobangGame* game);
+
+/// Extracts the row index of the last move from a given game
+/// @param game the game object
+DLLPORT int GetLastRow(GobangGame* game);
+
+/// Extracts the column index of the last move from a given game
+/// @param game the game object
+DLLPORT int GetLastCol(GobangGame* game);
+
+/// Extracts the current player (if any) from a given game
+/// @param game the game object
+DLLPORT int GetCurrentPlayer(GobangGame* game);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif

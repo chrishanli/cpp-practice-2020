@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using gobang_gui.forms;
+using System;
 using System.Windows.Forms;
 
 namespace gobang_gui
@@ -14,7 +14,12 @@ namespace gobang_gui
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGameBoard());
+            FormWelcome welcome = new FormWelcome();
+            welcome.ShowDialog();
+            if (welcome.GetSelected() != null)
+            {
+                Application.Run(welcome.GetSelected());
+            }
         }
     }
 }
